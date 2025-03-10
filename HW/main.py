@@ -14,7 +14,7 @@ class Hero(ABC):
         self.__random_int = random.randint(1, 3)
 
     def attack(self):
-        print(f"{self.name} атакует с силой {self.power}!")
+        print(f"{self.name} атакует базавой атакой {self.power}!")
 
     def protection(self):
         print(f"{self.name} защищается!")
