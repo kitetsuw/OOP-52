@@ -16,4 +16,3 @@ class Car:
 kia = Car("k5", 2023, "white")
 kia.signal()
 kia.action()
-
