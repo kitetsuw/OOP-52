@@ -43,7 +43,6 @@ get_all_users()
 print("Пользователь с айди №3")
 # update
 def update_user(conn, user_id, name=None, age=None, hobby=None):
-    """Обновляет данные пользователя по id"""
     query = 'UPDATE users SET '
     params = []
     
