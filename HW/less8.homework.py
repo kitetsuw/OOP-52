@@ -34,12 +34,12 @@ def add_user(name, age, hobby=""):
     print(f"Пользователь {name} добавлен")
 
 
-add_user('Илья Муромец', 25, 'фехтование')
-add_user('John Doe1', 25, 'плавание')
-add_user('John Doe2', 27, 'шахматы')
-add_user('John Doe3', 28, 'чтение')
-add_user('John Doe99', 35, 'шахматы')
-add_user('John Doe88', 33, 'чтение')
+#add_user('Илья Муромец', 25, 'фехтование')
+#add_user('John Doe1', 25, 'плавание')
+#add_user('John Doe2', 27, 'шахматы')
+#add_user('John Doe3', 28, 'чтение')
+#add_user('John Doe99', 35, 'шахматы')
+#add_user('John Doe88', 33, 'чтение')
 
 
 def add_grade(user_id, subject, grade):
@@ -49,9 +49,9 @@ def add_grade(user_id, subject, grade):
     connect.commit()
 
 
-add_grade(5, "Алгебра", 2)
-add_grade(5, "Геометрия", 3)
-add_grade(5, "Физика", 5)
+#add_grade(5, "Алгебра", 2)
+#add_grade(5, "Геометрия", 3)
+#add_grade(5, "Физика", 5)
 
 
 def delete_user_by_id(id):
@@ -80,8 +80,6 @@ def get_young_users():
     for row in cursor.fetchall():
         print(row)
 
-# Создание представления
 create_users_grades_view()
 
-# Проверка
 get_young_users()
